@@ -54,8 +54,8 @@ RUN ln -sfn /usr/bin/php5.6 /etc/alternatives/php
 # Expose apache.
 EXPOSE 80
 
-# Copy this repo into place.
-ADD www /var/www/site
+# Copy this repo into place. Remove this comment when necessary
+# ADD www /var/www/site
 
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
