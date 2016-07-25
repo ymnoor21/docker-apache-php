@@ -6,5 +6,5 @@ To create a volume
 
 To run application container with volume and mysql container (change port 80 to 8080 if you already have something running.
 
-`docker run -p 80:80 --name app_container --link mysql_container:mysql -d ymnoor21/ap:v2`
+`docker run -p 80:80 --name app_container --volumes-from app_data --link mysql_container:mysql -d ymnoor21/ap:v2`
 
